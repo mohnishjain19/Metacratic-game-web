@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <Title>Metacritic Game Web</Title>
+            <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+            <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="MetacriticGameWeb.css">
+             <link rel="preconnect" href="https://fonts.gstatic.com">
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        </head>
+
+    <body>
+
+      
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+            <a href="#" class="navbar-brand"><h2>Metacritic Game Web</h2></i></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="" class="nav-link " id=>HOME</a>
+                    </li>
+                    <li class="nav-item visible-md">
+                        <a href="#space" class="nav-link">STORE</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          COMMUNTIY
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#footer">DISCUSSIONS</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">WORKSHOPS</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a href="http://localhost/Codes/MetacraticGameWeb.php" class="nav-link">SUPPORT</a>
+                      </li>
+                </ul>
+            </div>
+      <div class="collapse navbar-collapse float-md-right" id="navLinks">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a href="http://localhost/Codes/log-in.html" class="nav-link pl-lg-5" >Login  <i class="fas fa-user"></i></a>
+              </li>
+              <li>
+                <a href="http://localhost/Codes/sign-up.html" class="nav-link pl-lg-3" >Sign-Up <i class="fas fa-user-plus"></i></a>
+              </li>
+            </ul>
+        </div>
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5"
+        style="color: white;">
+        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+        <p class="mb-0 text-capitalize"><span id="item-count"> </span> items - $<span class="item-total"></span>
+        </p>
+      </div>
+    </nav>
+
+    <section class="main-img ">
+        <span> <img src="IMG5.jpg" alt="My Image" class="img-fluid"></span>
+      </section>
+      <div id="cart" class="cart">
+      
+        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="gta.jpg" class="img-fluid rounded-circle" width="50px" height="50px" id="item-img" alt="">
+          <div class="item-text">
+    
+            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+            <span>$</span>
+            <span id="cart-item-price" class="cart-item-price" class="mb-0">1000</span>
+          </div>
+          <a href="#" id='cart-item-remove' class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="tombraider.jpg" class="img-fluid rounded-circle" width="50px" height="50px" id="item-img" alt="">
+          <div class="cart-item-text">
+    
+            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+            <span>$</span>
+            <span id="cart-item-price" class="cart-item-price" class="mb-0">3000</span>
+          </div>
+          <a href="#" id='cart-item-remove' class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5> $ <strong id="cart-total" class="font-weight-bold">4000</strong> </h5>
+        </div>
+        
+        <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+          <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+          <a href="log-in.html" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+          <div class="row" >
+
+              <div class="col-lg-3 col-md-6 col-sm-6"  id="space">
+                      <div class="card">
+                          <div class="new">
+                              <img src="gta.jpg"  width="495px" height="300px">
+                            </div>
+                            <div class="container1">
+                              <h4 id="s"><b>GTAV</b></h4>
+                              <h5 id="s"><b>$ 1000</b></h5>
+                              <p id="s"> Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. 
+                                It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California.</p>
+                      
+                                <button class="btn btn-warning btn-sm">Add to cart</button>
+                                <button class="btn btn-success btn-sm">Buy</button>
+                              
+                            
+                            </div>
+                    </div>
+                   
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6" id="space">
+                <div class="card">
+                  <div class="new" >
+                    <img src="crysis.jpg" width="495px" height="300px">
+                  </div>
+                  <div class="container1">
+                    <h4 id="s"><b>Crysis 3</b></h4>
+                    <h5 id="s"><b>$ 2000</b></h5>
+                    <p id="s"> Crysis 3 is a first-person shooter video game developed by Crytek and published in 2013 by Electronic Arts for Microsoft Windows, PlayStation 3, and Xbox 360. It is the third main game of the Crysis series, 
+                      a sequel to the 2011 video game Crysis 2. The multiplayer portion of the game was developed by Crytek UK.  </p>  
+                      <button class="btn btn-warning btn-sm">Add to cart</button>
+                      <button class="btn btn-success btn-sm">Buy</button>
+                   
+      
+                  </div>
+                </div>
+               
+                
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-6" id="space">
+              <div class="card">
+                <div class="new" >
+                  <img src="warrrr.jpg" width="495px" height="300px">
+              </div>
+              <div class="container1">
+                <h4 id="s"><b>Far Cry 5</b></h4>
+                <h5 id="s"><b>$ 3000</b></h5>
+                <p id="s">Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft Montreal and Ubisoft Toronto and published by Ubisoft. It is the fifth 
+                  main installment in the Far Cry series. The game takes place in Hope County, a fictional region of Montana, United States. </p>
+                  <button class="btn btn-warning btn-sm">Add to cart</button>
+                  <button class="btn btn-success btn-sm">Buy</button>
+                
+              </div>
+              </div>
+               
+                
+             </div>
+                
+
+              </div>
+
+
+              <div class ="jumbotron" id="space1">
+
+                    <h2 class="text"><i class="fa fa-gift"></i>  Free Games</h2>
+                    <hr>
+                
+                     <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img src="JWE_Jurassic_Website_External_945x455_Key Art_1.png" id="space2" width="732px" height="400px" >
+            
+                            <a href="Jurassic-World™--The-Game_com.ludia.jurassicworld_gameslolc_10416370.exe"><button class="btn btn-warning btn-xl form-control">FREE NOW</button></a>
+                          </div>
+                          
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <img src="cryingsuns.png" id="space2" width="732" height="400px">
+                          <button class="btn btn-danger btn-xl form-control">COMING SOON</button>
+                        </div>  
+                     </div>
+                    
+                      
+              </div>
+          
+           <div class="row" >
+
+            <div class="col-lg-3 col-md-6 col-sm-6"  id="space">
+                <div class="card">
+
+                  <div class="new">
+                    <img src="tombraider.jpg" width="495px" height="300px">
+                </div>
+                <div class="container1">
+                  <h4 id="s"><b>Shadow of the Tomb Raider</b></h4>
+                  <h5 id="s"><b>$ 1000</b></h5>
+                  <p id="s">Shadow of the Tomb Raider is a 2018 action-adventure video game developed by Eidos-Montréal and published by Square Enix. It continues the narrative
+                     from the 2015 game Rise of the Tomb Raider and is the twelfth mainline entry in the Tomb Raider series. </p>
+                     <button class="btn btn-warning btn-sm">Add to cart</button>
+                     <button class="btn btn-success btn-sm">Buy</button>
+
+                  
+                </div>
+                </div>    
+              
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6" id="space">
+
+              <div class="card">
+                <div class="new" >
+                  <img src="fifa.jpg" width="495px" height="300px">
+              </div>
+              <div class="container1">
+                <h4 id="s"><b>FIFA 20</b></h4>
+                <h5 id="s"><b>$ 2000</b></h5>
+                <p id="s">FIFA 20 is a football simulation video game published by Electronic Arts as part of the FIFA series. It is the 27th installment in the FIFA series, and was released on 27 September 2019 for Microsoft Windows, 
+                  PlayStation 4, Xbox One, and Nintendo Switch. </p>
+                  <button class="btn btn-warning btn-sm">Add to cart</button>
+                  <button class="btn btn-success btn-sm">Buy</button>
+                
+              </div>
+              </div>
+              
+              
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-6" id="space">
+
+            <div class="card">
+              <div class="new" >
+                <img src="readreadredemtion.jpg" width="495px" height="300px">
+            </div>
+            <div class="container1">
+
+              <h4 id="s"><b>Red Dead Redemption 2</b></h4>
+              <h5 id="s"><b>$ 3000</b></h5>
+              <p id="s">Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. 
+                he game is the third entry in the Red Dead series and is a prequel to the 2010 game Red Dead Redemption.
+                The story is set in 1899 in a fictionalized representation of the Western, Midwestern.</p>
+                <button class="btn btn-warning btn-sm">Add to cart</button>
+                <button class="btn btn-success btn-sm">Buy</button>
+              
+            </div>
+            </div>
+              
+              
+           </div>
+              
+           </div>
+
+           <h4 class="colourheading" id="newrelease">New release</h4>
+           <div class="row" >
+
+            <div class="col-lg-2 col-md-6 col-sm-12"  id="space3">
+                <div class="">
+
+                  <div class="new">
+                    <img src="cyberpunk.jpg" width="300px" height="300px">
+                </div>
+                <div class="container1">
+                  <h5 id="s"><b>Cyberpunk 2077</b></h5>
+                  <p id="s">CD PROJEKT RED</p>
+                  <br>
+                  <p id="s">₹2999.00</p>
+                  <br>
+                  <br>
+
+                  
+                </div>
+                </div>    
+              
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12" id="space3">
+
+              <div class="">
+                <div class="new" >
+                  <img src="Godswillfall.jpg" width="300px" height="300px">
+              </div>
+              <div class="container1">
+                <h5 id="s"><b>Gods Will FALL</b></h5>
+                <p id="s">CLEVER BEANS</p>
+                <br>
+                <p id="s">₹999.00</p>
+                <br>
+                <br>
+                  
+                
+              </div>
+              </div>
+           </div>
+           <div class="col-lg-2 col-md-6 col-sm-12" id="space3">
+
+            <div class="">
+              <div class="new" >
+                <img src="Medium.jpg" width="300px" height="300px">
+            </div>
+            <div class="container1">
+              <h5 id="s"><b>The Medium</b></h5>
+              <p id="s">Blobber Team</p>
+              <br>
+              <p id="s">₹2999.00</p>
+              <br>
+              <br>
+              
+            </div>
+            </div>
+         </div>
+         
+         <div class="col-lg-2 col-md-6 col-sm-12" id="space3">
+
+          <div class="">
+            <div class="new" >
+              <img src="hitman3.jpg" width="300px" height="300px">
+          </div>
+          <div class="container1">
+            <h5 id="s"><b>Hitman 3</b></h5>
+            <p id="s">IO Interactive</p>
+            <br>
+            <p id="s">₹1499.00</p>
+            <br>
+            <br>
+            
+          </div>
+          </div>
+       </div>
+
+         
+         <div class="col-lg-2 col-md-6 col-sm-12" id="space3">
+
+          <div class="">
+            <div class="new" >
+              <img src="shadypartofme.png" width="300px" height="300px">
+          </div>
+          <div class="container1">
+            <h5 id="s"><b>Shady Part of Me</b></h5>
+            <p id="s">Douze Dixiemea</p>
+            <br>
+            <p id="s">₹599.00</p>
+            <br>
+            <br>  
+            
+          </div>
+          </div>
+       </div>
+              
+           </div>
+</div>
+
+<footer class="page-footer font-small unique-color-dark">
+
+	<div style="background-color: #6351ce;">
+	  <div class="container">
+  
+		<div class="row py-4 d-flex align-items-center">
+  
+		  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+			<h6 class="mb-0">Get connected with us on social networks!</h6>
+		  </div>
+		  <div class="col-md-6 col-lg-7 text-center text-md-right icon">
+  
+			<a class="fb-ic" href="https://www.facebook.com/" target="_blank">
+			  <i class="fab fa-facebook-f white-text mr-4"> </i>
+			</a>
+			<a class="tw-ic" href="https://twitter.com/Darshan02693691?s=09" target="_blank">
+			  <i class="fab fa-twitter white-text mr-4"> </i>
+			</a>
+			<a class="ins-ic" href="https://www.instagram.com/invites/contact/?i=12hrzo7izpojk&utm_content=pypw1h"  target="_blank">
+			  <i class="fab fa-instagram white-text"> </i>
+			</a>
+  
+		  </div>
+  
+		</div>
+  
+	  </div>
+	</div>
+	<div class="container text-center text-md-left mt-5 mt-5" id="footer">
+	  <div class="row text-md-left mt-5">
+		<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+		  <h6 class="text-uppercase font-weight-bold">Metacritic Game Web</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px;">
+		  <p>A one stop destination where u can find any game at <strong>Reasonable</strong> prices</p>
+  
+		</div>
+		<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+		  <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>
+			<a href="#!">Your Account</a>
+		  </p>
+		  <p>
+			<a href="#space">Buy a game</a>
+		  </p>
+		  <p>
+			<a href="#newrelease">Game Charts</a>
+		  </p>
+		  <p>
+			<a href="http://localhost/Codes/MetacraticGameWeb.php">Help</a>
+		  </p>
+  
+		</div>
+		<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+		  <h6 class="text-uppercase font-weight-bold">Contact</h6>
+		  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		  <p>
+			<i class="fas fa-home mr-3"></i>Bull Temple Rd, Basavanagudi, Bengaluru, Karnataka 560019</p>
+		  <p>
+			<i class="fas fa-envelope mr-3"></i>mohnishjain.ec19@bmsce.ac</p>
+      <p>
+        <i class="fas fa-envelope mr-3"></i>darshanhirani.is19@bmsce.ac</p>
+      <p>
+			<i class="fas fa-phone mr-3"></i>+91-7985225511</p>
+		  <p>
+			<i class="fas fa-print mr-3"></i> +91- 6264547414</p>
+  
+		</div> 
+	  </div>
+	</div>
+	<div class="footer-copyright text-center py-3">© 2021 Copyright:
+	  <a href="#">Metacritic Game Web Pvt Ltd.</a>
+	</div> 
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="myScript.js"></script>
+<script src="appp.js"></script>
+<script>
+  $(function () {
+      $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+  });
+</script>
+<script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+<script>
+     $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
+    </body>
+</html>
